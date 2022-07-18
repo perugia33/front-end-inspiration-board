@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,  {useState, useEffect}  from 'react';
 
 import image from './images/nostalgiaLogo .png'
 import './App.css';
@@ -6,16 +6,35 @@ import BoardList from './components/BoardList';
 import CardList from './components/CardList';
 import {Button} from  '@material-ui/core';
 import cardMessages from './data/messages.json';
-import {useState} from 'react';
+import axios from 'axios';
 
 console.log(cardMessages);
+
+const kBaseUrl = process.env.REACT_APP_BACKEND_URL;
+const boardApiToJson=  (board) =>{
+  const { board_id, title, owner } = board;
+    return { board_id, title, owner };
+};
+
+const getBoard = ()=>{
+  return axios
+    .get(`${kBaseUrl}/boards`)
+    .then((response)=>{
+      return response.data.map(boardApiToJson);
+    })
+    .catch((err)=>{
+      console.log(err);
+      throw new Error(`Error fetching boards: ${err}`);
+    });
+};
 
 function App() {
   // const boards = [
   //   { id: '70s', name: "70's Board"},
   //   { id: '80s', name: "80's Board"}
   // ];
-
+  const [boardData,setBoardData] = useState("")
+   
  
   const [cardData, setCardData] = useState(cardMessages)
   const updateCardData = updatedCard => {

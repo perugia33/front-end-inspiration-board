@@ -106,7 +106,7 @@
 
 .form_container {
   height: 60vh;
-  display: none;
+  display: block;
   justify-content: center;
   margin-bottom: 2em; 
   border: 2px solid indigo;
@@ -146,7 +146,7 @@ button{
   margin: .3em;
   margin-left: 1em;
   padding: .1em;
-  background-color: #66cda7;
+  background-color: #3EC70B;
   color: rgb(50, 50, 50);
 }
 

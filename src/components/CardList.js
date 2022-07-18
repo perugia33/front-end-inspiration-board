@@ -25,7 +25,7 @@ const CardList = (props)=> {
      
            <Grid container spacing={2}>
            {cardDataMap} 
-            <Grid item  key={cardDataMap.id} xs={4} >
+            <Grid item  key={cardDataMap.id} xs={10} md= {6} lg={4} >
                  
                   <Cards/>
                

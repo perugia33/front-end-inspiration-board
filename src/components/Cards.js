@@ -28,7 +28,7 @@ const Cards = ()=> {
                 /> */}
                 <CardMedia
                     component="img"
-                    height="134"
+                    height="104"
                     image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu9qa2FKzekjelSQz910jeTLoXAbZj6Fat1g&usqp=CAU"
                 />
 
