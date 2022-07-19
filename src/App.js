@@ -35,7 +35,7 @@ function App() {
     { id: '90s', name: "80's Board", className: "board_90s"},
 
   ];
-  const [boardData,setBoardData,  board_name] = useState("")
+ 
    
   
   const[selectedOption, setSelectedOption] = useState(options[0].value);
@@ -43,6 +43,8 @@ function App() {
     console.log("Selected " , selectedOption);
   }
 
+
+  // const [boardData,setBoardData,  board_name] = useState("")
 
     
 
