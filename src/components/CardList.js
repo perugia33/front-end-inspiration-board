@@ -3,41 +3,40 @@ import ReactDOM from 'react-dom/client';
 import Cards from '../components/Cards';
 import './CardList.css';
 import Grid from  '@material-ui/core/Grid';
-import Paper from  '@material-ui/core/Paper';
 import {Container} from '@material-ui/core';
 
 
-const CardList = (props)=> {
-
-  const cardDataMap = props.messages.map(item =>(
-    <Cards
-        key={item.id}
-        id={item.id} 
-        image={item.image} 
-        text={item.text} 
-        liked={item.liked} 
-        onUpdateCard={props.onUpdateCard}/> ))
-  console.log("hello" + {cardDataMap})
-
-    return(
-
-        <Container >
-     
-           <Grid container spacing={2}>
-           {cardDataMap} 
-            <Grid item  key={cardDataMap.id} xs={10} md= {6} lg={4} >
-                 
-                  <Cards/>
-               
-            </Grid>
+const CardList = ({messages})=> {
+  const cardDataMap  = (messages) => {
+    return messages.map((message) => {
+      console.log("hello" + {cardDataMap})
+      return (
+        <Cards
+        key={message.id}
+        id={message.id} 
+        image={message.image} 
+        text={message.text} 
+        liked={message.liked} 
+        onUpdateCard={message.onUpdateCard}
+        handleCardDelete={message.handleCardDelete}
+        />
+      );     
+    });
+  };
+  return   <Container >
+              <Grid container spacing={3}>
+           
+                <Grid item  key={cardDataMap.id} lg={10}  >
+                  {cardDataMap(messages)} 
+                  {/* handleCardDelete={handleCardDelete} */}
+                  
+                </Grid>  
                 
-               
-                
-            </Grid>
+              </Grid>
+          </Container>
+ };
+//  md= {6} lg={4}
+  
 
-        </Container>
-    )
-
-}
 
 export default CardList;

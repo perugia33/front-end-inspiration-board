@@ -15,26 +15,14 @@ const Board = ()=> {
              <div className = "board_70s">
              
             </div>
-            <p id = "board_name">Love 💙 the 70's</p>
+            <p id = "title">Love 💙 the 70's</p>
           
             {/* <p id = "board_name">Everybody Is A Star</p> */}
-            {/* <div className = "board_80s">
-            </div>
-            <p id = "board_name">Time to Chill Out</p> */}
-            
+          
             {/* <p id = "board_name">Hey Chill Out</p> */}
 
            
-            {/* <div className = "card">
-            </div> */}
-            {/* <div>
-                <CardList />
-             </div>  */}
-            {/* <div className = "card">
-            </div> */}
-            {/* <div>
-                <CardList />
-             </div>  */}
+          
         </div>
         
 

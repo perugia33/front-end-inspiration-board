@@ -1,11 +1,11 @@
 import React from 'react';
 import './Card.css';
-import Card from '@material-ui/core/Card'
-import CardHeader from '@material-ui/core/CardHeader'
-import CardMedia from '@material-ui/core/CardMedia'
-import CardContent from '@material-ui/core/CardContent'
+import { styled } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import CardActions from '@material-ui/core/CardActions'
+import CardActions from '@material-ui/core/CardActions';
 import Icon from '@material-ui/core/Icon';
 import {IconButton} from  '@material-ui/core';
 import {DeleteOutlined} from  '@material-ui/icons';
@@ -13,28 +13,22 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
 
-const Cards = ()=> {
+const Cards = (props)=> {
 
     return(
 
         <div className = "card">
-            <Card>
-                {/* <CardHeader 
-                action={
-                    <IconButton>
-                        <DeleteOutlined />
-                    </IconButton>
-                }
-                /> */}
+            <Card elevation={3}>
+                
                 <CardMedia
                     component="img"
                     height="104"
-                    image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu9qa2FKzekjelSQz910jeTLoXAbZj6Fat1g&usqp=CAU"
+                    image={props.image}
                 />
-
+                {/* image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu9qa2FKzekjelSQz910jeTLoXAbZj6Fat1g&usqp=CAU"  */}
                 <CardContent>
                         <Typography variant="body2" color="text.secondary">
-                        Do What Makes You Happy
+                        {props.text}
 
                         </Typography>
                 </CardContent>
@@ -44,10 +38,10 @@ const Cards = ()=> {
                     <Typography variant="body2" color="text.secondary">2</Typography>
                     <icon> 💜</icon>
                     
-                    <Icon color="primary"  onClick= {()=> console.log("deleted")}>
+                    <Icon color="primary"  onClick= {()=> console.log("updated")}>
                         add_circle
                     </Icon>
-                    <IconButton onClick= {()=> console.log("deleted")}>
+                    <IconButton onClick= {()=> console.log("deleted", props.text)}>
                         <DeleteOutlined />
                     </IconButton>
                    
