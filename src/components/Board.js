@@ -5,17 +5,17 @@ import './Board.css';
 
 
 
-const Board = ()=> {
+const Board = (props)=> {
 
     return(
 
         <div>
 
             
-             <div className = "board_70s">
+             <div className={props.className}>
              
             </div>
-            <p id = "title">Love 💙 the 70's</p>
+            <p id="title">{props.name}</p>
           
             {/* <p id = "board_name">Everybody Is A Star</p> */}
           

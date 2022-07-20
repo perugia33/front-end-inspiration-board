@@ -27,17 +27,17 @@ const Cards = (props)=> {
                 />
                 {/* image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu9qa2FKzekjelSQz910jeTLoXAbZj6Fat1g&usqp=CAU"  */}
                 <CardContent>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography variant="body2" >
                         {props.text}
 
                         </Typography>
                 </CardContent>
-
-                <CardActions Spacing={1}>
+                {/* color="text.secondary */}
+                <CardActions spacing={1}>
                     
-                    <Typography variant="body2" color="text.secondary">2</Typography>
-                    <icon> 💜</icon>
-                    
+                    <Typography variant="body2" >2</Typography>
+                    <i> 💜</i>
+                    {/* color="text.secondary" */}
                     <Icon color="primary"  onClick= {()=> console.log("updated")}>
                         add_circle
                     </Icon>

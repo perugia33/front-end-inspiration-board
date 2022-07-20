@@ -2,7 +2,7 @@ import React ,  {useState, useEffect}  from 'react';
 
 import image from './images/nostalgiaLogo .png'
 import './App.css';
-import BoardList from './components/BoardList';
+import Board from './components/Board';
 import CardList from './components/CardList';
 import {Button} from  '@material-ui/core';
 import cardMessages from './data/messages.json';
@@ -32,16 +32,14 @@ function App() {
   const options = [
     { id: '70s', name: "70's Board", className: "board_70s"},
     { id: '80s', name: "80's Board", className: "board_80s"},
-    { id: '90s', name: "80's Board", className: "board_90s"},
+    { id: '90s', name: "90's Board", className: "board_90s"},
 
   ];
  
    
   
-  const[selectedOption, setSelectedOption] = useState(options[0].value);
-    const handleSelectedOption = ({options}) => {
-    console.log("Selected " , selectedOption);
-  }
+  const[selectedOption, setSelectedOption] = useState(options[0].id);
+  const selectedOptionData= options.find(item => item.id == selectedOption);
 
 
   // const [boardData,setBoardData,  board_name] = useState("")
@@ -98,9 +96,11 @@ function App() {
             onChange={(e) => setSelectedOption(e.target.value)}        
             >     
                 {options.map((item) => (
-                    <option key={item.id} >
-                      name={item.name}
-                      className={item.className}                
+                    <option key={item.id} 
+                      value={item.id}
+                      > 
+                                         
+                      {item.name}          
                     </option>
                   ))}
             
@@ -122,7 +122,9 @@ function App() {
         <main className = "board_container">
           
             <div className= "boards_1" >
-            <BoardList />
+            <Board  className={selectedOptionData.className}
+                  name={selectedOptionData.name}
+            />
               
               <hr/>
           
@@ -174,7 +176,7 @@ function App() {
             </div>
         
             
-            <div class = "create_card">
+            <div className="create_card">
                 <h4>Create New Card</h4>
                 {/* <label>Message </label> */}
                 <textarea rows="2" placeholder='Message'></textarea>
