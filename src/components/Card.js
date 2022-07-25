@@ -22,11 +22,21 @@ function Card(props){
             {/* <img src={image} alt="love poster" /> */}
             <h5> {props.message1}</h5>
           </div>
+          
 
           <div className="cards">
             <div className={props.card2}> 
             </div>
           </div>
+
+          <div className="cards_icons"> 
+              <p     
+              onClick={incrementCount}
+              >            
+              💙  
+              </p>
+            <p>{count}</p>     
+          </div>  
 
           <div className="cards"> 
             <div className={props.card3}></div>
@@ -41,15 +51,15 @@ function Card(props){
           
           </div>
 
-          <div className="cards_icons"> 
+          {/* <div className="cards_icons"> 
               <p     
               onClick={incrementCount}
               >            
               💙  
               </p>
-            <p>{count}</p>
-              
-          </div>       
+            <p>{count}</p>     
+          </div>    */}
+
       </div>
 
       )

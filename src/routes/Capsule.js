@@ -9,7 +9,7 @@ const Capsule = () => {
         <Link to="/">home</Link>
       </nav>
       <h1>take me back in time</h1>
-      <div className="capsule-container">
+      {/* <div className="capsule-container">
         <img src={require("../images/arcade.jpg")} alt="arcade" />
         <img src={require("../images/cars.jpg")} alt="cars" />
         <img src={require("../images/cassette-tapes.jpg")} alt="cassettes" />
@@ -22,9 +22,12 @@ const Capsule = () => {
         <img src={require("../images/floppy-disc.jpg")} alt="floppy-disc" />
         <img src={require("../images/gameboy.jpg")} alt="gameboy" />
         <img src={require("../images/shoes.jpg")} alt="shoes" />
-      </div>
+      </div> */}
     </main>
   );
 };
 
 export default Capsule;
+
+
+
