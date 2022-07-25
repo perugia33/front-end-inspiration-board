@@ -1,3 +1,230 @@
+.cardActions_Container{
+    margin-top: 20;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+#background{
+    height:4em;
+    width: 8em;
+    background-image: url("../images/80s_boombox.jpg");
+    background-size: cover;
+    background-repeat:no-repeat ;
+    
+}
+
+.card_1{
+   
+    height:6em;
+    width: 8em;
+   padding: 10px;
+   margin: 2px;
+   /* padding: 10px; */
+   background-image: url("../images/70s_image_1.jpg");
+   background-size: cover;
+   background-repeat:no-repeat ;
+  
+}
+
+.card_2{
+   
+    height:8em;
+    width: 8em;
+   padding: 10px;
+   margin: 2px;
+   /* padding: 10px; */
+   background-image: url("../images/70_record_player.jpeg");
+   background-size: cover;
+   background-repeat:no-repeat ;
+  
+}
+
+
+.card_3{ 
+    height:10em;
+   width: 12em;
+   padding: 2px;
+   margin: 2px;
+   margin-left: 30px;
+   /* padding: 10px; */
+   background-image: url("../images/70s_disco_5.jpg");
+   background-size: cover;
+   background-repeat:no-repeat ;
+  
+}
+.card_4{ 
+    height:8em;
+    width: 8em;
+   padding: 10px;
+   margin: 2px;
+ 
+   /* padding: 10px; */
+   background-image: url("../images/70s_yin_yang.jpg");
+   background-size: cover;
+   background-repeat:no-repeat ;
+  
+}
+
+.card_5{ 
+    height:8em;
+    width: 8em;
+   padding: 10px;
+   margin: 2px;
+ 
+   /* padding: 10px; */
+   background-image: url("../images/80s_boombox.jpg");
+   background-size: cover;
+   background-repeat:no-repeat ;
+  
+}
+
+.card_6{ 
+    height:8em;
+    width: 14em;
+   padding: 10px;
+   margin: 2px;
+ 
+   /* padding: 10px; */
+   background-image: url("../images/90s_shoes.jpg");
+   background-size: cover;
+   background-repeat:no-repeat ;
+  
+}
+
+.card_7{ 
+    height:8em;
+    width: 8em;
+   padding: 10px;
+   margin: 2px;
+ 
+   /* padding: 10px; */
+   background-image: url("../images/80s_cassette.jpeg");
+   background-size: cover;
+   background-repeat:no-repeat ;
+  
+}
+.card_8{ 
+    height:8em;
+    width: 8em;
+   padding: 10px;
+   margin: 2px;
+ 
+   /* padding: 10px; */
+   background-image: url("../images/80s_collage.jpeg");
+   background-size: cover;
+   background-repeat:no-repeat ;
+  
+}
+
+.card_9{ 
+    height:14em;
+    width: 18em;
+   padding: 10px;
+   margin: 2px;
+ 
+   /* padding: 10px; */
+   background-image: url("../images/80s_skates.jpeg") ;
+   background-size: cover;
+   background-repeat:no-repeat ;
+  
+}
+
+.card_10{ 
+    height:14em;
+    width: 18em;
+   padding: 10px;
+   margin: 2px;
+ 
+   /* padding: 10px; */
+   background-image: url("../images/90s_collage.jpeg") ;
+   background-size: cover;
+   background-repeat:no-repeat ;
+  
+}
+
+.card_11{ 
+    height:18em;
+    width: 16em;
+   padding: 10px;
+   margin: 2px;
+ 
+   /* padding: 10px; */
+   background-image: url("../images/90s_skateboarder.jpeg") ;
+   background-size: cover;
+   background-repeat:no-repeat ;
+}
+
+.card_12{ 
+    height:16em;
+    width: 18em;
+   padding: 10px;
+   margin: 2px;
+ 
+   /* padding: 10px; */
+   background-image: url("../images/90s_Fashion.jpeg") ;
+   background-size: cover;
+   background-repeat:no-repeat ;
+}
+
+.card_13{ 
+    height:10em;
+    width: 12em;
+   padding: 10px;
+   margin: 2px;
+ 
+   /* padding: 10px; */
+   background-image: url("../images/90s_stickers.jpeg") ;
+   background-size: cover;
+   background-repeat:no-repeat ;
+}
+
+ .card_16{
+    height:10em;
+    width: 18em;
+    padding: 10px;
+   /* margin: 2px;  */
+   background-image: url("../images/newBoard_image_2.jpeg");
+   background-size: cover;
+   background-repeat:no-repeat ;
+   
+} 
+
+
+.card_17{
+    height:7em;
+width: 8em;
+padding: 10px;
+margin: 5px;
+background-color: bisque;
+
+} 
+.cards{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 16em;
+}
+
+.cards_icons{ 
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    height: 2em;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.wrapper{
+    margin:35px 5px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    width: 60vw;
+    outline: 2px solid indigo;
+    /* position: ce; */
+  }
+
 .delete {
     width: 1.5em;
     height: 1.5em;
@@ -6,15 +233,8 @@
     opacity: 1;
 }
 
-.delete:hover {
-    opacity: 0.6;
-}
 
-.border-polaroid {
-    width: 18em;
-    height: 24em;
-    background-color: #f3f2edf8;
-}
+
 
 .message {
     font-size: 1.3rem;
@@ -35,25 +255,6 @@
     vertical-align: middle;
 }
 
-.like {
-    width: 2.5em;
-    height: 2.5em;
-    opacity: 1;
-}
 
-.like-container {
-    margin-top: 1.1em;
-    text-align: right;
-    margin-right: 10%;
-}
 
-.like:hover {
-    opacity: 0.6;
-}
 
-.count {
-    color: #4E878C;
-    font-family: 'Fjalla One', san-serif;
-    font-size: 2.5em;
-    margin-left: 0.1em;
-}

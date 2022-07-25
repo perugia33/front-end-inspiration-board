@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Capsule from "./routes/Capsule";
+import Board70 from "./routes/Board70";
+import NewBoardForm from "./components/NewBoardForm";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -12,7 +13,8 @@ root.render(
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="capsule" element={<Capsule />} />
+        <Route path="Board70" element={<Board70 />} />
+        <Route path="NewBoard" element={<NewBoardForm />} />
       </Routes>
     </React.StrictMode>
   </BrowserRouter>

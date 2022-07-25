@@ -1,4 +1,4 @@
-.board-selection-dropdown {
+/* .board-selection-dropdown {
     font-family: 'Fjalla One', sans-serif;
     width: 15em;
     height: 3.5em;
@@ -8,4 +8,50 @@
     border-radius: 1em;
     border: none;
     text-align: center;
+} */
+.board_70s{
+    align-items:center;
+    justify-content: center;
+    margin: 4px;
+    height: 18em;
+    width: 18em;
+    display:block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/70_image_5.jpg");
+}
+
+.board_80s{
+    display: block;
+    align-items:center;
+    justify-content: center;
+    margin: 4px;
+    height: 17em;
+    width: 18em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/80s_boombox_lg.jpg" )  ;
+}
+
+.board_90s{
+
+    align-items:center;
+    justify-content: center;
+    margin: 4px;
+    height: 14em;
+    width: 22em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/90s_collage.jpeg");
+}
+
+.newBoard{
+    background-image: url("../images/newBoard_cover_image.jpeg");
+    align-items:center;
+    justify-content: center;
+    margin: 4px;
+    height: 17em;
+    width: 18em;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
